@@ -197,6 +197,7 @@ section {
     width: 170px;
     display: flex;
     justify-content: space-between;
+    margin: 36px;
 }
 
 .home-sci a {
@@ -739,6 +740,10 @@ span {
         transition-delay: 0.25s;
     }
 
+    .img img {
+        width: 35rem;
+    }
+
 
 
 
@@ -802,19 +807,8 @@ span {
 
 }
 
-@media(max-width:371px) {
-    .home {
-        justify-content: center;
-    }
-
-    .home-content {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .home-content h1 {
-        font-size: 5rem;
+@media(max-width:300px) {
+    html {
+        font-size: 30%;
     }
 }
