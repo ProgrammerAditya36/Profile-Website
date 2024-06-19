@@ -1,0 +1,162 @@
+/* Global Styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+:root {
+  --bg-color: #081b29;
+  --second-bg-color: #112e42;
+  --text-color: #ededed;
+  --main-color: #00abf0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+  }
+
+/* Home Section */
+
+
+.img img {
+  width: 40rem;
+  border-radius: 4rem;
+}
+
+
+.btn-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 34.5rem;
+  height: 5rem;
+}
+
+.btn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 100%;
+  background: var(--main-color);
+  border: 0.2rem solid var(--main-color);
+  border-radius: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: var(--bg-color);
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--bg-color);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  color: var(--main-color);
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+#bio-link{
+  /* border-bottom: 1px solid var(--text-color); */
+  color: var(--text-color);
+}
+
+
+
+.heading {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+span {
+  color: var(--main-color);
+}
+
+
+.btns {
+  display: inline-block;
+  width: 15rem;
+}
+
+.btns a::before {
+  background-color: var(--second-bg-color);
+}
+
+.btns a:hover {
+  color: var(--main-color);
+}
+
+.content h3 {
+  font-size: 2rem;
+}
+
+.content p {
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+#a1 {
+  width: 90%;
+}
+
+#a2 {
+  width: 80%;
+}
+
+#a3 {
+  width: 65%;
+}
+
+#a4 {
+  width: 75%;
+}
+
+#a5 {
+  width: 95%;
+}
+
+#a6 {
+  width: 80%;
+}
+
+#a7 {
+  width: 55%;
+}
+
+#a8 {
+  width: 85%;
+}

@@ -1,0 +1,80 @@
+
+/* project Section */
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5rem;
+  background-color: var(--second-bg-color);
+}
+
+.project-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.project-row .project-column {
+  flex: 1 1 40rem;
+}
+
+.project .title {
+  font-size: 2.5rem;
+  margin: 5rem 0;
+}
+
+
+
+.project-content {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.project-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1.1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+
+}
+
+.project-content .content {
+  position: relative;
+  padding: 1.5rem;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 0.6rem;
+  margin-bottom: 2rem;
+  z-index: 1;
+  overflow: hidden;
+  height: 20rem;
+}
+
+.project-content .content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  background: var(--bg-color);
+  transition: 0.5s;
+}
+
+.project-content .content:hover::before {
+  width: 100%;
+}
+
+.year {
+  font-size: 1.5rem;
+  color: var(--main-color);
+  padding-bottom: 0.5rem;
+}
+
+.year i {
+  padding-right: 0.5rem;
+}
