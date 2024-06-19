@@ -19,9 +19,7 @@
     padding: 10rem 4% 2rem;
   }
 
-  .home {
-    padding: 0 4%;
-  }
+
 
   .home-content p {
     font-size: 1.6rem;
@@ -47,7 +45,7 @@
     opacity: 1;
   }
   .home-content {
-    grid-template-columns: 1fr;
+    grid-template-columns: 4fr 1fr;
   }
   .home-content p {
     width: 100%;
@@ -117,7 +115,6 @@
 
 @media (max-width: 576px) {
   .home-content {
-    grid-template-columns: 1fr;
     text-align: center;
   }
 
@@ -130,9 +127,6 @@
     flex-direction: column;
   }
 
-  .home-sci {
-    width: 160px;
-  }
 
   .home-sci a {
     width: 38px;
