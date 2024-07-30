@@ -51,6 +51,8 @@
   z-index: 1;
   overflow: hidden;
   height: 20rem;
+  display: block;
+  color: var(--text-color);
 }
 
 .project-content .content::before {
